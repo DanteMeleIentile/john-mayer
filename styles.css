@@ -36,6 +36,7 @@ header{
     position: sticky;
     top: 0;
     z-index: 2;
+    background-image: linear-gradient(to right, #151515, rgb(66, 110, 88));
 }
 
     header a h2{
@@ -53,11 +54,12 @@ header{
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
-            width: 100%;        
+            width: 100%;
         }
 
             #Header__Nav__Marcado{
                 text-decoration: underline;
+                color: #9DB4C0;
             }
 
                 header nav ul li a{
