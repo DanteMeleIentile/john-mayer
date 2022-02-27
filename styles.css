@@ -783,6 +783,10 @@ footer{
             padding: 1rem 0;
         }
 
+        .Footer_RRSS ul li:link{
+            background-color: #9DB4C0;
+        }
+
     .Footer__copyright{
         font-size: 1.3rem;
         text-align: center;
@@ -813,7 +817,12 @@ li a:hover{
     color: white;
 }
 
-
 a h2:hover{
     color: white;
+}
+
+/* Arreglos para Chrome */
+
+a:-webkit-any-link{
+    color: #9db4c0;
 }
