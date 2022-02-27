@@ -821,7 +821,7 @@ a h2:hover{
     color: white;
 }
 
-/* Arreglos para Chrome */
+/* Arreglos para navs !Firefox */
 
 a:-webkit-any-link{
     color: #9db4c0;
