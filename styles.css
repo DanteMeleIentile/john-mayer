@@ -12,9 +12,16 @@ Orden de este archivo: ACTUALIZAR!!!!!
     5. Selectores de etiquetas
 ----------------*/
 
+
 *{
     padding: 0px;
     margin: 0px;
+    /* INICIO VARIABLES TEXTO */
+        --tam-titulo-d: 3.5rem;
+        --tam-p-d: 2.1rem;
+        --tam-text-placeholder: 1.5rem;
+    /* FIN VARIABLES TEXTO */
+    
 }
 
 html{
@@ -423,7 +430,7 @@ header{
         }
 
         .Index_Bio{
-            font-size: 2.1rem;
+            font-size: var(--tam-p-d);
             text-align: justify;
             color: #000000;
             padding: 1rem;
@@ -443,7 +450,7 @@ header{
                 color: #9d9d9c;
                 text-align: center;
                 text-decoration: underline;
-                font-size: 3rem;
+                font-size: var(--tam-titulo-d);
                 padding: 1rem 0;
             }
             
@@ -485,14 +492,14 @@ header{
                 display: block;
                 text-align: center;
                 text-decoration: underline;
-                font-size: 3rem;
+                font-size: var(--tam-titulo-d);
                 color: #000000;
             }
 
             .galeria_texto p{
                 text-align: justify;
                 color: #000000;
-                font-size: 2.1rem;;
+                font-size: var(--tam-p-d);
                 padding: 0 1rem 1rem 1rem;
             }
     
@@ -549,14 +556,14 @@ header{
                 display: block;
                 text-align: center;
                 text-decoration: underline;
-                font-size: 3rem;
-                color: #ffffff;
+                font-size: var(--tam-titulo-d);
+                color: #000;
             }
     
             .obras__texto p{
                 text-align: justify;
-                color: #ffffff;
-                font-size: 1.7rem;
+                color: #000;
+                font-size: var(--tam-p-d);
                 padding: 0 1rem 1rem 1rem;
             }
     
@@ -588,7 +595,7 @@ header{
         .main__vida h2{
             text-align: center;
             text-decoration: underline;
-            font-size: 3rem;
+            font-size: var(--tam-titulo-d);
             color: #151515;
         }
 
@@ -604,14 +611,14 @@ header{
             .main__vida section:nth-child(2) p{
                     text-align: justify;
                     color: #151515;
-                    font-size: 1.7rem;
+                    font-size: var(--tam-p-d);
                     padding: 1rem;
                 }
 
             .main__vida section:nth-child(3) p{
                     text-align: justify;
                     color: #9d9d9c;
-                    font-size: 1.7rem;
+                    font-size: var(--tam-p-d);
                     padding: 1rem;
             }
 
@@ -646,14 +653,14 @@ header{
             display: flex;
             justify-content: center;
             text-decoration: underline;
-            font-size: 3rem;
-            color: #ffffff;
+            font-size: var(--tam-titulo-d);
+            color: #000;
             padding: 1rem;
         }
 
         .main__contacto p{
-            color: #ffffff;
-            font-size: 1.7rem;
+            color: #000;
+            font-size: var(--tam-p-d);
             padding: 1rem;
         }
 
@@ -697,14 +704,14 @@ header{
             .main__contacto__form h4{
                 display: block;
                 text-align: center;
-                font-size: 2rem;
+                font-size: var(--tam-titulo-d);
                 color: #ffffff;
             }
 
             .main__contacto__form p{
                 text-align: center;
                 color: #ffffff;
-                font-size: 1.2rem;
+                font-size: var(--tam-p-d);
                 padding: 1rem;
             }
 
@@ -714,13 +721,13 @@ header{
                 width: 90%;
                 margin: auto;
                 border-radius: 1rem;
-                font-size: 1rem;
+                font-size: var(--tam-text-placeholder);
                 text-align: center;
             }
             
             .Formulario__Campos__comentarios{
                 height: 8rem;
-                font-size: 1.2rem;
+                font-size: var(--tam-text-placeholder);
             }
 
             .Formulario__correo{
@@ -745,9 +752,9 @@ header{
                     .Formulario__Botones div input{
                         width: 8rem;
                         background-color: #9d9d9c;
-                        font-size: 1.2rem;
+                        font-size: 2rem;
                         border-radius: 0.5rem;
-                        color: #ffffff;
+                        color: #000;
                     }
                 
                         .Formulario__Botones input:hover{
