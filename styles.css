@@ -1,25 +1,15 @@
-/*STYLESHEET Proyecto
-Orden de este archivo: ACTUALIZAR!!!!!
-    1. Estilo general de la página (selector universal,HTML, body, etc)
-    2. Header y Navegación de la página
-    3. Contenidos:
-        3.1. Contenido INDEX
-        3.2. Contenido GALERÍA
-        3.3. Contenido OBRAS
-        3.4 Contenido VIDA
-        3.5 Contenido CONTACTO
-    4. Footer
-    5. Selectores de etiquetas
-----------------*/
-
-
 *{
     padding: 0px;
     margin: 0px;
     /* INICIO VARIABLES TEXTO */
         --tam-titulo-d: 3.5rem;
+        --tam-titulo-m: 3rem;
+
         --tam-p-d: 2.1rem;
-        --tam-text-placeholder: 1.5rem;
+        --tam-p-m: 1.7rem;
+
+        --tam-text-placeholder-d: 1.5rem;
+        --tam-text-placeholder-m: 0.5rem;
     /* FIN VARIABLES TEXTO */
     
 }
@@ -112,7 +102,7 @@ header{
 
     /*INICIO Contenido INDEX*/
         .Index_Bio{
-            font-size: 1.7rem;
+            font-size: var(--tam-p-m);
             text-align: justify;
             color: #000000;
             padding: 1rem;
@@ -127,7 +117,7 @@ header{
             .Index__Obras h3{
                 color: #9d9d9c;
                 text-align: center;
-                font-size: 3rem;
+                font-size: var(--tam-titulo-m);
                 padding: 1rem 0;
             }
             
@@ -163,14 +153,14 @@ header{
             display: block;
             text-align: center;
             text-decoration: underline;
-            font-size: 3rem;
-            color: #ffffff;
+            font-size: var(--tam-titulo-m);
+            color: #000;
         }
 
         .galeria_texto p{
             text-align: justify;
-            color: #ffffff;
-            font-size: 1.7rem;
+            color: #000;
+            font-size: var(--tam-p-m);
             padding: 0 1rem 1rem 1rem;
         }
 
@@ -204,14 +194,14 @@ header{
             display: block;
             text-align: center;
             text-decoration: underline;
-            font-size: 3rem;
-            color: #ffffff;
+            font-size: var(--tam-titulo-m);
+            color: #000;
         }
 
         .obras__texto p{
             text-align: justify;
-            color: #ffffff;
-            font-size: 1.7rem;
+            color: #000;
+            font-size: var(--tam-p-m);
             padding: 0 1rem 1rem 1rem;
         }
 
@@ -242,8 +232,8 @@ header{
             display: block;
             text-align: center;
             text-decoration: underline;
-            font-size: 3rem;
-            color: #ffffff;
+            font-size: var(--tam-titulo-m);
+            color: #000;
         }
 
         .main__vida section:nth-child(3){
@@ -252,15 +242,15 @@ header{
 
             .main__vida section:nth-child(2) p{
                 text-align: justify;
-                color: #ffffff;
-                font-size: 1.7rem;
+                color: #000;
+                font-size: var(--tam-p-m);
                 padding: 0 1rem 1rem 1rem;
             }
 
             .main__vida section:nth-child(3) p{
                 text-align: justify;
                 color: #9d9d9c;
-                font-size: 1.7rem;
+                font-size: var(--tam-p-m);
                 padding: 0 1rem 1rem 1rem;
             }
 
@@ -285,14 +275,14 @@ header{
             display: block;
             text-align: center;
             text-decoration: underline;
-            font-size: 3rem;
-            color: #ffffff;
+            font-size: var(--tam-titulo-m);
+            color: #000;
         }
 
         .main__contacto p{
             text-align: justify;
-            color: #ffffff;
-            font-size: 1.7rem;
+            color: #000;
+            font-size: var(--tam-p-m);
             padding: 1rem;
         }
 
@@ -324,14 +314,14 @@ header{
             .main__contacto__form h4{
                 display: block;
                 text-align: center;
-                font-size: 2rem;
+                font-size: var(--tam-titulo-m);
                 color: #ffffff;
             }
 
             .main__contacto__form p{
                 text-align: center;
                 color: #ffffff;
-                font-size: 1.2rem;
+                font-size: var(--tam-p-m);
                 padding: 1rem;
             }
 
@@ -341,13 +331,13 @@ header{
                 width: 90%;
                 margin: auto;
                 border-radius: 1rem;
-                font-size: 1rem;
+                font-size: var(--tam-text-placeholder-m);
                 text-align: center;
             }
             
             .Formulario__Campos__comentarios{
                 height: 8rem;
-                font-size: 1.2rem;
+                font-size: var(--tam-text-placeholder-m);
             }
 
             .Formulario__correo{
@@ -721,13 +711,13 @@ header{
                 width: 90%;
                 margin: auto;
                 border-radius: 1rem;
-                font-size: var(--tam-text-placeholder);
+                font-size: var(--tam-text-placeholder-d);
                 text-align: center;
             }
             
             .Formulario__Campos__comentarios{
                 height: 8rem;
-                font-size: var(--tam-text-placeholder);
+                font-size: var(--tam-text-placeholder-d);
             }
 
             .Formulario__correo{
