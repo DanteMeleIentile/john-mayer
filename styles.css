@@ -36,7 +36,6 @@ header{
     position: sticky;
     top: 0;
     z-index: 2;
-    background-image: linear-gradient(to right, #151515, rgb(66, 110, 88));
 }
 
     header a h2{
@@ -108,7 +107,7 @@ header{
         .Index_Bio{
             font-size: 1.7rem;
             text-align: justify;
-            color: #ffffff;
+            color: #000000;
             padding: 1rem;
         }
 
@@ -383,9 +382,13 @@ header{
 
 /* FIN MOBILE FIRST */
 
-/*INICIO 800PX*/
+/*INICIO 800PX****************************************/
 
 @media screen and (min-width: 768px) {
+
+    header{
+    background-image: linear-gradient(10deg, #151515 70%, #43534d, #a0ddff);
+}
 
 /* INICIO INDEX desktop */
     .main__index{
@@ -419,11 +422,10 @@ header{
             display: none;
         }
 
-
         .Index_Bio{
-            font-size: 1.7rem;
+            font-size: 2.1rem;
             text-align: justify;
-            color: #ffffff;
+            color: #000000;
             padding: 1rem;
             background-color: #9d9d9c;
         }
@@ -463,6 +465,10 @@ header{
                         border-radius: 1rem;
                     }
 
+                    .Index__Obras div a img:hover{
+                        transform: scale(1.05);
+                    }
+
             .Index__Obras hr{
                     display: none;
                 }
@@ -480,13 +486,13 @@ header{
                 text-align: center;
                 text-decoration: underline;
                 font-size: 3rem;
-                color: #ffffff;
+                color: #000000;
             }
 
             .galeria_texto p{
                 text-align: justify;
-                color: #ffffff;
-                font-size: 1.7rem;
+                color: #000000;
+                font-size: 2.1rem;;
                 padding: 0 1rem 1rem 1rem;
             }
     
@@ -583,7 +589,7 @@ header{
             text-align: center;
             text-decoration: underline;
             font-size: 3rem;
-            color: #ffffff;
+            color: #151515;
         }
 
         .main__vida section{
@@ -597,7 +603,7 @@ header{
         
             .main__vida section:nth-child(2) p{
                     text-align: justify;
-                    color: #ffffff;
+                    color: #151515;
                     font-size: 1.7rem;
                     padding: 1rem;
                 }
@@ -801,10 +807,15 @@ a:visited{
     color: #9db4c0;
 }
 
+li:hover{
+    transform: scale(1.2);
+}
+
 li a:hover{
     text-decoration: underline overline;
     color: white;
 }
+
 
 a h2:hover{
     color: white;
