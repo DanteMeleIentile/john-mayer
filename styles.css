@@ -9,3 +9,12 @@
     object-fit: cover;
     border-radius: 1rem;
 }
+
+.asda{
+    height: 100%;
+}
+
+.Obras__iframe{
+    height: 25rem;
+    padding: 5rem 0;
+}
