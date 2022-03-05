@@ -23,17 +23,17 @@
     <link rel="stylesheet" href="../styles.css">
   </head>
 
-  <body>
+  <body class="animate__animated animate__fadeIn">
     <nav class="navbar sticky-top navbar-expand-lg top-fixed navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="../index.html">John Mayer</a>
+        <a class="navbar-brand" href="#">John Mayer</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <span id="boton__nav" class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
           <div class="navbar-nav nav-tabs">
             <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
-            <a class="nav-link active" href="#">Galería</a>
+            <a class="nav-link active pestaña__activo" href="#">Galería</a>
             <a class="nav-link" href="./obras.html">Obras</a>
             <a class="nav-link" href="./vida.html">Vida</a>
             <a class="nav-link" href="./contacto.html">Contacto</a>
@@ -51,42 +51,58 @@
       </section>
   
       <!-- INICIO CARRUSEL -------------------------->
-      <section class="container d-none d-md-block">
+      <section class="container d-none d-md-block mb-2">
         <div class="row">
-          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+          <div id="carouselExampleCaptions" class="carousel slide galeria__carrusel" data-bs-ride="carousel">
+            <div class="carousel-indicators galeria__carrusel">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
             </div>
             <div class="carousel-inner">
-              <div class="carousel-item active">
+              <div class="carousel-item active galeria__carrusel">
                 <img src="../img/img_galeria3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>First slide label</h5>
+                  <p>Some representative placeholder content for the first slide.</p>
+                </div>
               </div>
-              <div class="carousel-item">
+              <div class="carousel-item galeria__carrusel">
                 <img src="../img/img_galeria3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second slide label</h5>
+                  <p>Some representative placeholder content for the second slide.</p>
+                </div>
               </div>
-              <div class="carousel-item">
+              <div class="carousel-item galeria__carrusel">
                 <img src="../img/img_galeria3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
               </div>
-              <div class="carousel-item">
+              <div class="carousel-item galeria__carrusel">
                 <img src="../img/img_galeria3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
               </div>
-              <div class="carousel-item">
+              <div class="carousel-item galeria__carrusel">
                 <img src="../img/img_galeria3.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="../img/img_galeria3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
               </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
@@ -107,20 +123,53 @@
       <!-- INICIO IMAGENES GALERÍA DESKTOP -------------------------->
       <section class="container d-none d-md-block">
         <div class="row">
-          <div class="col-6 col-md-6 d-flex justify-content-center">
-            <img class="img-fluid" src="../img/img_galeria5.jpg" alt="">
+          <div class="col-6">
+            <div class="row">
+              <div class="col galeria__desk_images";>
+                <img class="img-fluid" src="../img/Johnmayer_bbking.jpg" alt="">
+                <h2 class="galeria__text_images">texto de esta imagen</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col galeria__desk_images">
+                <img class="img-fluid" src="../img/Johnmayer_Ericclapton.jpg" alt="">
+                <h2 class="galeria__text_images">texto de esta imagen</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col galeria__desk_images">
+                <img class="img-fluid" src="../img/Johnmayer_Ericclapton_bbking.jpg" alt="">
+                <h2 class="galeria__text_images">texto de esta imagen</h2>
+              </div>
+            </div>
           </div>
-          <div class="col-6 col-md-6 d-flex justify-content-center">
-            <img class="img-fluid" src="../img/img_galeria5.jpg" alt="">
-          </div>
-          
-          <div class="col-6 col-md-6 d-flex justify-content-center">
-            <img class="img-fluid" src="../img/img_galeria5.jpg" alt="">
-          </div>
-          <div class="col-6 col-md-6 d-flex justify-content-center">
-            <img class="img-fluid" src="../img/img_galeria5.jpg" alt="">
+          <div class="col-6 d-flex">
+              <div class="row col galeria__desk_images">
+                <img class="img-fluid" src="../img/img_galeria6.jpg" alt="">
+                <h2 class="galeria__text_images">texto de esta imagen</h2>
+              </div>
           </div>
         </div>
+
+
+
+          <!-- <div class="col-6 col-md-6 d-flex justify-content-center galeria__desk_images">
+            <img class="img-fluid" src="../img/img_galeria5.jpg" alt="">
+            <h2 class="galeria__text_images">texto de esta imagen</h2>
+          </div>
+          <div class="col-6 col-md-6 d-flex justify-content-center galeria__desk_images">
+            <img class="img-fluid" src="../img/img_galeria5.jpg" alt="">
+            <h2 class="galeria__text_images">texto de esta imagen</h2>
+          </div>
+          
+          <div class="col-6 col-md-6 d-flex justify-content-center galeria__desk_images">
+            <img class="img-fluid" src="../img/img_galeria5.jpg" alt="">
+            <h2 class="galeria__text_images">texto de esta imagen</h2>
+          </div>
+          <div class="col-6 col-md-6 d-flex justify-content-center galeria__desk_images">
+            <img class="img-fluid" src="../img/img_galeria5.jpg" alt="">
+            <h2 class="galeria__text_images">texto de esta imagen</h2>
+          </div> -->
       </section>
   
       <!-- TEXTO VÍDEOS GALERÍA -------------------------->
@@ -133,42 +182,47 @@
       <!-- INICIO VIDEOS GALERÍA -------------------------->
       <section class="container">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-12 col-md-6">
             <div class="ratio ratio-16x9 my-2">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/iOfovFgHHbw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe src="https://www.youtube.com/embed/iOfovFgHHbw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-12 col-md-6">
             <div class="ratio ratio-16x9 my-2">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/iOfovFgHHbw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe src="https://www.youtube.com/embed/iOfovFgHHbw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-12 col-md-6">
             <div class="ratio ratio-16x9 my-2">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/iOfovFgHHbw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe src="https://www.youtube.com/embed/iOfovFgHHbw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-12 col-md-6">
             <div class="ratio ratio-16x9 my-2">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/iOfovFgHHbw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe src="https://www.youtube.com/embed/iOfovFgHHbw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
           </div>
         </div>
       </section>
     </main>
 
+    <!-- Footer ------>
+    
     <footer class="container">
-      <div class="row">
-        <address class="col-12 border-top border-bottom border-4">
-            <ul class="list-unstyled d-flex justify-content-around flex-wrap align-items-center my-2">
-                <li><a href="https://twitter.com/johnmayer" target="_blanck"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="https://www.facebook.com/johnmayer/" target="_blanck"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="https://www.instagram.com/johnmayer/" target="_blanck"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="https://www.youtube.com/johnmayer" target="_blanck"><i class="fab fa-youtube"></i></a></li>
-                <li><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96086.18889665227!2d-73.2690465589709!3d41.18485397946276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e8092a96783719%3A0xdf8bfca7094fcece!2sBridgeport%2C%20Connecticut%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sar!4v1643406639400!5m2!1ses-419!2sar" target="_blanck"><i class="fas fa-map-marker-alt"></i></a></li>
-            </ul>                
-        </address>
-        <p class="text-center">© Dante Mele Ientile.- Todos los derechos, zurdos y ambidiestros reservados.</p>
+      <div class="row footer__bordes">
+        <section class="col-12 col-md-2 d-flex align-items-center my-2">
+          <img class="img-fluid" src="../img/sob_rock_universe.png" alt="Logo Sob Rock">
+        </section>
+        <address class="col-12 col-md-10 my-0 d-flex justify-content-around align-items-center">
+            <a href="https://twitter.com/johnmayer" target="_blanck"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/johnmayer/" target="_blanck"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/johnmayer/" target="_blanck"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/johnmayer" target="_blanck"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96086.18889665227!2d-73.2690465589709!3d41.18485397946276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e8092a96783719%3A0xdf8bfca7094fcece!2sBridgeport%2C%20Connecticut%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sar!4v1643406639400!5m2!1ses-419!2sar" target="_blanck"><i class="fas fa-map-marker-alt"></i></a>
+      </address>
+      </div>
+      <div class="row my-1">
+        <p class="text-center my-0">© Dante Mele Ientile.- Todos los derechos, zurdos y ambidiestros reservados.</p>
       </div>
     </footer>
 

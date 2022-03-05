@@ -24,6 +24,27 @@ nav{
   background-image: linear-gradient(65deg, rgba(111, 161, 193, 1), rgba(170, 149, 187, 1));
 }
 
+/* GALERÍA ************/
+
+.galeria__carrusel{
+  max-height: 80vh !important;
+}
+
+.galeria__desk_images{
+  position: relative;
+}
+
+  .galeria__desk_images img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+.galeria__text_images{
+  position: absolute;
+  bottom: 0px;
+}
+
 /* OBRAS ************/
 
 .Obras__iframe{
@@ -33,8 +54,8 @@ nav{
 
 /* FOOTER ************/
 .footer__bordes{
-  border-top:3px solid #5a3159;
-  border-bottom:3px solid #5a3159;
+  border-top:3px solid #af4056;
+  border-bottom:3px solid #af4056;
 }
 
 /* SELECTORES DE ETIQUETAS *******************/
