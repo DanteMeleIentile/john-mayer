@@ -2,6 +2,10 @@ body{
     background-image: url(./img/bg-softrock-version.png);
     font-family: aktiv-grotesk, sans-serif;
     font-style: normal;
+    /* ARREGLOS PARA FOOTER EN BOTTOM */
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
 }
 
 /* NAV ************/
@@ -53,10 +57,14 @@ nav{
 }
 
 /* FOOTER ************/
-.footer__bordes{
-  border-top:3px solid #af4056;
-  border-bottom:3px solid #af4056;
+footer{
+  margin-top: auto !important;
 }
+
+  .footer__bordes{
+    border-top:3px solid #af4056;
+    border-bottom:3px solid #af4056;
+  }
 
 /* SELECTORES DE ETIQUETAS *******************/
 
