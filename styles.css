@@ -57,10 +57,21 @@ nav{
 }
 
 /* VIDA ************/
+
 @media screen and (min-width: 768px) {
   #vida__img_2{
     order: 1;
   }
+}
+
+/* CONTACTO ************/
+
+.contacto__map{
+  height: 25rem !important;
+}
+
+.form__comentarios{
+  height: 11rem !important;
 }
 
 /* FOOTER ************/
