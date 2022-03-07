@@ -21,6 +21,29 @@ nav{
     background-color: rgba(235, 210, 255, 0.4) !important; 
   }
 
+  .nav_logo_style{
+    font-family: 'News Cycle', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    font-size: 2.8rem;
+    letter-spacing: .06em;
+    text-shadow: .15rem .15rem 0 #5a3159;
+  }
+
+  .nav_tab_style{
+    font-family: 'News Cycle', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    letter-spacing: .06em;
+  }
+
 /* INDEX ************/
 
 #index__video{
