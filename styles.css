@@ -28,6 +28,10 @@ nav{
   background-image: linear-gradient(65deg, rgba(111, 161, 193, 1), rgba(170, 149, 187, 1));
 }
 
+.pie_de_tabla{
+  color: #5a3159;
+}
+
 /* GALERÍA ************/
 
 .galeria__carrusel{
@@ -54,6 +58,10 @@ nav{
 .Obras__iframe{
     height: 25rem;
     padding: 5rem 0;
+}
+
+.asd{
+  background-color: #5a3159;
 }
 
 /* VIDA ************/
